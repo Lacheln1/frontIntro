@@ -36,10 +36,6 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#hobby" class="nav-link" data-bs-toggle="tab">Hobby</a>
-                    </li>
-
-                    <li class="nav-item">
                         <a href="#gallery" class="nav-link" data-bs-toggle="tab">Gallery</a>
                     </li>
                 </ul>
@@ -164,6 +160,57 @@
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- gallery 탭 -->
+        <div id="gallery" class="container tab-pane"><br>
+            <div class="card-mystyle ">
+                <div class="img-container">
+                    <img src="./images/lol.png" alt="롤">
+                    <div class="card-text game-text">롤 (소환사의 협곡)</div>
+                </div>
+                <div class="img-container">
+                    <img src="./images/lostark.jpg" alt="로아">
+                    <div class="card-text game-text">로스트아크</div>
+                </div>
+
+                <div class="img-container">
+                    <img src="./images/xPlane.jpg" alt="엑플" data-bs-toggle="modal" data-bs-target="#myModal"
+                        style="cursor: pointer;">
+                    <div class="card-text game-text">X-Plane 11</div>
+                    <!-- 모달 컨텐츠 -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">X-Plane 11</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <img src="./images/xp2.jpg" alt="" id="xplane" onclick="change()"
+                                        style="cursor: pointer;">
+
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">닫기</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="img-container">
+                    <img src="./images/eternalreturn.PNG" alt="이리">
+                    <div class="card-text game-text">이터널 리턴</div>
                 </div>
             </div>
         </div>
