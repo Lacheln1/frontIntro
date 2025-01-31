@@ -27,10 +27,11 @@ function gameImgChange(){
         i=0;
     }
 
-    let planeImg=document.getElementById("xplane").src=gameTabimage[i];
+    document.getElementById("xplane").src=gameTabimage[i];
     // planeImg
     console.log("작동중");
 }
+
 
 function aniImgChange(){
     a++;
@@ -46,6 +47,7 @@ function aniImgChange(){
     console.log(a);
 }
 
+
 function textChange(){
     b++;
     if(b>=imgTitle.length){
@@ -55,6 +57,9 @@ function textChange(){
     document.getElementById("imgTitle").innerText=imgTitle[b];
     document.getElementById("imgDes").innerText=imgDes[b];
 }
+
+
+
 
 function travelChange(){
     c++;
